@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wanderlust Chronicles | Travel Blog</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jvectormap/2.0.5/jquery-jvectormap.min.css">
+    <link rel="icon" href="images/favicon.ico">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-content">
+            <div class="compass">
+                <div class="compass-circle"></div>
+                <div class="compass-needle"></div>
+            </div>
+            <p>Exploring the world...</p>
+        </div>
+    </div>
+
+    <!-- Theme Toggler -->
+    <div class="theme-toggle">
+        <i class="fas fa-moon"></i>
+    </div>
+    
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress"></div>
+    
+    <!-- Navigation -->
+    <header class="header">
+        <div class="header-container">
+            <div class="logo-container">
+                <a href="index.html" class="logo">Wanderlust Chronicles</a>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="pages/destinations.html">Destinations</a></li>
+                    <li><a href="pages/travel-guides.html">Travel Guides</a></li>
+                    <li><a href="pages/photography.html">Photography</a></li>
+                    <li><a href="pages/travel-quiz.html" class="new-feature">Travel Quiz</a></li>
+                    <li><a href="pages/about.html">About</a></li>
+                    <li><a href="pages/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero parallax" data-parallax-speed="0.5">
+        <div class="hero-content" data-aos="fade-up" data-aos-delay="200">
+            <h1 class="animated-heading" data-typed>Explore the Unexplored</h1>
+            <p>Authentic travel stories, breathtaking photography, and essential guides for your next adventure</p>
+            <div class="hero-buttons">
+                <a href="pages/destinations.html" class="btn-primary">Start Exploring</a>
+                <a href="pages/travel-quiz.html" class="btn-secondary">Find Your Next Destination</a>
+            </div>
+        </div>
+        <div class="hero-overlay"></div>
+        <div class="scroll-indicator">
+            <span>Scroll Down</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+        <!-- New floating 3D elements -->
+        <div class="floating-elements">
+            <div class="float-element" style="--delay: 0s; --size: 100px; --x: 15%; --y: 20%;">
+                <i class="fas fa-plane"></i>
+            </div>
+            <div class="float-element" style="--delay: 1s; --size: 80px; --x: 75%; --y: 30%;">
+                <i class="fas fa-camera"></i>
+            </div>
+            <div class="float-element" style="--delay: 2s; --size: 60px; --x: 85%; --y: 70%;">
+                <i class="fas fa-compass"></i>
+            </div>
+            <div class="float-element" style="--delay: 1.5s; --size: 70px; --x: 25%; --y: 65%;">
+                <i class="fas fa-map-marked-alt"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Destinations -->
+    <section class="featured-destinations">
+        <div class="section-header" data-aos="fade-up">
+            <h2><span class="gradient-text">Featured Destinations</span></h2>
+            <p>Discover the stories behind these unforgettable places</p>
+        </div>
+        <div class="destinations-grid">
+            <div class="destination-card glass-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="destination-image">
+                    <img src="images/bali.jpg" alt="Bali, Indonesia">
+                    <div class="destination-overlay">
+                        <span class="location-tag">Bali, Indonesia</span>
+                    </div>
+                </div>
+                <div class="destination-content">
+                    <h3>Bali's Hidden Temples</h3>
+                    <p>Beyond the tourist spots, discover sacred places where time stands still.</p>
+                    <div class="destination-meta">
+                        <span><i class="far fa-calendar"></i> 7 days ago</span>
+                        <span><i class="far fa-clock"></i> 6 min read</span>
+                    </div>
+                    <a href="pages/post-bali.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <!-- New destination info hover -->
+                <div class="destination-info">
+                    <div class="info-item">
+                        <i class="fas fa-sun"></i>
+                        <span>Best Season: Apr-Oct</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-dollar-sign"></i>
+                        <span>Budget: $$</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-language"></i>
+                        <span>Language: Indonesian</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="destination-card glass-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="destination-image">
+                    <img src="images/kyoto.jpg" alt="Kyoto, Japan">
+                    <div class="destination-overlay">
+                        <span class="location-tag">Kyoto, Japan</span>
+                    </div>
+                </div>
+                <div class="destination-content">
+                    <h3>Cherry Blossoms in Kyoto</h3>
+                    <p>A visual journey through Japan's most enchanting season.</p>
+                    <div class="destination-meta">
+                        <span><i class="far fa-calendar"></i> 2 weeks ago</span>
+                        <span><i class="far fa-clock"></i> 8 min read</span>
+                    </div>
+                    <a href="pages/post-kyoto.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="destination-info">
+                    <div class="info-item">
+                        <i class="fas fa-sun"></i>
+                        <span>Best Season: Mar-Apr</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-dollar-sign"></i>
+                        <span>Budget: $$$</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-language"></i>
+                        <span>Language: Japanese</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="destination-card glass-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="destination-image">
+                    <img src="images/santorini.jpg" alt="Santorini, Greece">
+                    <div class="destination-overlay">
+                        <span class="location-tag">Santorini, Greece</span>
+                    </div>
+                </div>
+                <div class="destination-content">
+                    <h3>The Blue Roofs of Santorini</h3>
+                    <p>Finding serenity among the iconic white buildings and azure seas.</p>
+                    <div class="destination-meta">
+                        <span><i class="far fa-calendar"></i> 1 month ago</span>
+                        <span><i class="far fa-clock"></i> 5 min read</span>
+                    </div>
+                    <a href="pages/post-santorini.html" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="destination-info">
+                    <div class="info-item">
+                        <i class="fas fa-sun"></i>
+                        <span>Best Season: May-Sep</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-dollar-sign"></i>
+                        <span>Budget: $$$</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-language"></i>
+                        <span>Language: Greek</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="view-all-container" data-aos="fade-up">
+            <a href="pages/destinations.html" class="btn-secondary">View All Destinations</a>
+        </div>
+    </section>
+
+    <!-- Latest Travel Stories -->
+    <section class="latest-stories">
+        <div class="section-header" data-aos="fade-up">
+            <h2><span class="gradient-text">Latest Travel Stories</span></h2>
+            <p>Personal experiences that transport you across the globe</p>
+        </div>
+        
+        <div class="stories-container">
+            <article class="story-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="story-image">
+                    <img src="images/venice.jpg" alt="Venice, Italy">
+                    <div class="story-badge">Featured</div>
+                </div>
+                <div class="story-content">
+                    <div class="story-meta">
+                        <span class="category">City Breaks</span>
+                        <span class="date">May 15, 2023</span>
+                    </div>
+                    <h3>Getting Lost in Venice's Labyrinth</h3>
+                    <p>The joy of wandering without a map in Italy's most enchanting city.</p>
+                    <div class="story-tags">
+                        <span>#Italy</span>
+                        <span>#Europe</span>
+                        <span>#Architecture</span>
+                    </div>
+                    <a href="pages/story-venice.html" class="read-more">Continue Reading <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </article>
+            
+            <!-- Added more story cards -->
+            <article class="story-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="story-image">
+                    <img src="images/peru.jpg" alt="Machu Picchu, Peru">
+                </div>
+                <div class="story-content">
+                    <div class="story-meta">
+                        <span class="category">Adventure</span>
+                        <span class="date">April 29, 2023</span>
+                    </div>
+                    <h3>Hiking the Inca Trail to Machu Picchu</h3>
+                    <p>A four-day journey through ancient pathways to reach the lost city of the Incas.</p>
+                    <div class="story-tags">
+                        <span>#Peru</span>
+                        <span>#Hiking</span>
+                        <span>#Ancient</span>
+                    </div>
+                    <a href="pages/story-peru.html" class="read-more">Continue Reading <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </article>
+            
+            <article class="story-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="story-image">
+                    <img src="images/marrakech.jpg" alt="Marrakech, Morocco">
+                </div>
+                <div class="story-content">
+                    <div class="story-meta">
+                        <span class="category">Culture</span>
+                        <span class="date">April 10, 2023</span>
+                    </div>
+                    <h3>Colors and Spices of Marrakech</h3>
+                    <p>Navigating the bustling souks and finding tranquility in hidden riads.</p>
+                    <div class="story-tags">
+                        <span>#Morocco</span>
+                        <span>#Market</span>
+                        <span>#Africa</span>
+                    </div>
+                    <a href="pages/story-marrakech.html" class="read-more">Continue Reading <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </article>
+        </div>
+        <div class="view-all-container" data-aos="fade-up">
+            <a href="pages/travel-stories.html" class="btn-secondary">View All Stories</a>
+        </div>
+    </section>
+
+    <!-- Travel Map Section -->
+    <section class="travel-map">
+        <div class="section-header" data-aos="fade-up">
+            <h2><span class="gradient-text">Our Wanderlust Map</span></h2>
+            <p>Explore the places we've visited and get inspired for your next adventure</p>
+        </div>
+        
+        <div class="map-container" data-aos="zoom-in">
+            <div id="world-map"></div>
+            <div class="map-stats">
+                <div class="stat-item">
+                    <span class="counter" data-target="45">0</span>
+                    <p>Countries Visited</p>
+                </div>
+                <div class="stat-item">
+                    <span class="counter" data-target="237">0</span>
+                    <p>Cities Explored</p>
+                </div>
+                <div class="stat-item">
+                    <span class="counter" data-target="12">0</span>
+                    <p>Continents Crossed</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="popular-routes" data-aos="fade-up">
+            <h3>Popular Travel Routes</h3>
+            <div class="routes-slider">
+                <div class="route-card">
+                    <div class="route-header">
+                        <span class="from">Bangkok</span>
+                        <i class="fas fa-plane"></i>
+                        <span class="to">Bali</span>
+                    </div>
+                    <div class="route-content">
+                        <p>Southeast Asia's best islands and temples</p>
+                        <span class="duration">14 Days</span>
+                    </div>
+                    <a href="pages/route-asia.html" class="btn-route">View Itinerary</a>
+                </div>
+                <div class="route-card">
+                    <div class="route-header">
+                        <span class="from">Rome</span>
+                        <i class="fas fa-train"></i>
+                        <span class="to">Paris</span>
+                    </div>
+                    <div class="route-content">
+                        <p>Classic European capitals exploration</p>
+                        <span class="duration">10 Days</span>
+                    </div>
+                    <a href="pages/route-europe.html" class="btn-route">View Itinerary</a>
+                </div>
+                <div class="route-card">
+                    <div class="route-header">
+                        <span class="from">New York</span>
+                        <i class="fas fa-car"></i>
+                        <span class="to">San Francisco</span>
+                    </div>
+                    <div class="route-content">
+                        <p>Epic USA coast-to-coast road trip</p>
+                        <span class="duration">21 Days</span>
+                    </div>
+                    <a href="pages/route-usa.html" class="btn-route">View Itinerary</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Travel Tips Section -->
+    <section class="travel-tips">
+        <div class="section-header" data-aos="fade-up">
+            <h2><span class="gradient-text">Essential Travel Tips</span></h2>
+            <p>Practical advice for seamless adventures</p>
+        </div>
+        
+        <div class="tips-container">
+            <div class="tip-card" data-aos="flip-left" data-aos-delay="100">
+                <div class="tip-icon">
+                    <i class="fas fa-suitcase"></i>
+                </div>
+                <h3>Packing Light</h3>
+                <p>Master the art of minimalist packing without sacrificing comfort.</p>
+                <div class="tip-hover">
+                    <p>Quick tips:</p>
+                    <ul>
+                        <li>Roll clothes, don't fold</li>
+                        <li>Use packing cubes</li>
+                        <li>Choose versatile items</li>
+                    </ul>
+                </div>
+                <a href="pages/tip-packing.html">Learn More</a>
+            </div>
+            
+            <div class="tip-card" data-aos="flip-left" data-aos-delay="200">
+                <div class="tip-icon">
+                    <i class="fas fa-camera"></i>
+                </div>
+                <h3>Photography Basics</h3>
+                <p>Capture memorable moments like a pro with these simple techniques.</p>
+                <div class="tip-hover">
+                    <p>Quick tips:</p>
+                    <ul>
+                        <li>Follow the rule of thirds</li>
+                        <li>Shoot during golden hour</li>
+                        <li>Include local elements</li>
+                    </ul>
+                </div>
+                <a href="pages/tip-photography.html">Learn More</a>
+            </div>
+            
+            <div class="tip-card" data-aos="flip-left" data-aos-delay="300">
+                <div class="tip-icon">
+                    <i class="fas fa-map-marked-alt"></i>
+                </div>
+                <h3>Off-the-Path Travel</h3>
+                <p>Discover hidden gems by venturing beyond typical tourist routes.</p>
+                <div class="tip-hover">
+                    <p>Quick tips:</p>
+                    <ul>
+                        <li>Talk to locals for recommendations</li>
+                        <li>Take public transportation</li>
+                        <li>Explore early morning</li>
+                    </ul>
+                </div>
+                <a href="pages/tip-hidden-spots.html">Learn More</a>
+            </div>
+        </div>
+        
+        <!-- Weather Widget for Travel Planning -->
+        <section class="weather-planning">
+            <h3>Check Weather Before You Travel</h3>
+            <div class="weather-search">
+                <input type="text" id="destination-input" placeholder="Enter a destination...">
+                <button id="check-weather"><i class="fas fa-search"></i> Check Weather</button>
+            </div>
+            <div id="weather-results"></div>
+        </section>
+    </section>
+
+    <!-- Instagram Feed with enhanced layout-->
+    <section class="instagram-feed">
+        <div class="section-header" data-aos="fade-up">
+            <h2><span class="gradient-text">Travel Moments</span></h2>
+            <p>A glimpse into our adventures through the lens</p>
+        </div>
+        
+        <div class="instagram-grid masonry-grid">
+            <div class="insta-photo masonry-item" data-aos="zoom-in" data-aos-delay="100">
+                <img src="images/insta-1.jpg" alt="Beach sunset">
+                <div class="insta-overlay">
+                    <i class="fab fa-instagram"></i>
+                    <span class="insta-likes"><i class="fas fa-heart"></i> 462</span>
+                </div>
+            </div>
+            <div class="insta-photo masonry-item" data-aos="zoom-in" data-aos-delay="150">
+                <img src="images/insta-2.jpg" alt="Mountain view">
+                <div class="insta-overlay">
+                    <i class="fab fa-instagram"></i>
+                    <span class="insta-likes"><i class="fas fa-heart"></i> 327</span>
+                </div>
+            </div>
+            <div class="insta-photo masonry-item" data-aos="zoom-in" data-aos-delay="200">
+                <img src="images/insta-3.jpg" alt="Local food">
+                <div class="insta-overlay">
+                    <i class="fab fa-instagram"></i>
+                    <span class="insta-likes"><i class="fas fa-heart"></i> 518</span>
+                </div>
+            </div>
+            <div class="insta-photo masonry-item" data-aos="zoom-in" data-aos-delay="250">
+                <img src="images/insta-4.jpg" alt="Ancient temple">
+                <div class="insta-overlay">
+                    <i class="fab fa-instagram"></i>
+                    <span class="insta-likes"><i class="fas fa-heart"></i> 690</span>
+                </div>
+            </div>
+            <div class="insta-photo masonry-item" data-aos="zoom-in" data-aos-delay="300">
+                <img src="images/insta-5.jpg" alt="Desert safari">
+                <div class="insta-overlay">
+                    <i class="fab fa-instagram"></i>
+                    <span class="insta-likes"><i class="fas fa-heart"></i> 412</span>
+                </div>
+            </div>
+            <div class="insta-photo masonry-item" data-aos="zoom-in" data-aos-delay="350">
+                <img src="images/insta-6.jpg" alt="Ocean diving">
+                <div class="insta-overlay">
+                    <i class="fab fa-instagram"></i>
+                    <span class="insta-likes"><i class="fas fa-heart"></i> 541</span>
+                </div>
+            </div>
+        </div>
+        
+        <div class="instagram-follow" data-aos="fade-up">
+            <a href="https://instagram.com/" target="_blank" class="btn-instagram">
+                <i class="fab fa-instagram"></i> Follow Our Journey
+            </a>
+        </div>
+    </section>
+
+    <!-- Newsletter with 3D effect -->
+    <section class="newsletter parallax" data-parallax-speed="0.3">
+        <div class="newsletter-container" data-aos="fade-up">
+            <div class="newsletter-content">
+                <h2>Join Our Adventure</h2>
+                <p>Subscribe to receive travel inspiration, exclusive guides and special offers directly to your inbox.</p>
+                
+                <form class="newsletter-form">
+                    <div class="form-group">
+                        <input type="email" placeholder="Your Email Address" required>
+                        <button type="submit" class="btn-subscribe">Subscribe</button>
+                    </div>
+                    <div class="form-benefits">
+                        <div class="benefit">
+                            <i class="fas fa-gift"></i>
+                            <span>Exclusive Travel Deals</span>
+                        </div>
+                        <div class="benefit">
+                            <i class="fas fa-book"></i>
+                            <span>Free City Guides</span>
+                        </div>
+                        <div class="benefit">
+                            <i class="fas fa-percent"></i>
+                            <span>Subscriber Discounts</span>
+                        </div>
+                    </div>
+                    <div class="form-notice">
+                        <small>We respect your privacy and will never share your information.</small>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer with enhanced layout -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-logo">
+                <h3>Wanderlust Chronicles</h3>
+                <p>Capturing the world, one story at a time.</p>
+                <div class="footer-achievements">
+                    <div class="achievement">
+                        <img src="images/award-1.png" alt="Travel Blog Award">
+                    </div>
+                    <div class="achievement">
+                        <img src="images/award-2.png" alt="Photography Award">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="pages/destinations.html">Destinations</a></li>
+                        <li><a href="pages/travel-guides.html">Travel Guides</a></li>
+                        <li><a href="pages/photography.html">Photography</a></li>
+                        <li><a href="pages/travel-tips.html">Travel Tips</a></li>
+                        <li><a href="pages/travel-quiz.html">Travel Quiz</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>About</h4>
+                    <ul>
+                        <li><a href="pages/about.html">Our Story</a></li>
+                        <li><a href="pages/team.html">Meet the Team</a></li>
+                        <li><a href="pages/contact.html">Contact Us</a></li>
+                        <li><a href="pages/privacy.html">Privacy Policy</a></li>
+                        <li><a href="pages/terms.html">Terms of Service</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h4>Connect</h4>
+                    <div class="social-icons">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                    </div>
+                    <div class="app-download">
+                        <h5>Get Our App</h5>
+                        <div class="app-buttons">
+                            <a href="#" class="app-button">
+                                <i class="fab fa-apple"></i>
+                                <span>App Store</span>
+                            </a>
+                            <a href="#" class="app-button">
+                                <i class="fab fa-google-play"></i>
+                                <span>Google Play</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>© 2025 Wanderlust Chronicles. All rights reserved.</p>
+            <div class="footer-language">
+                <select name="language" id="language-select">
+                    <option value="en">English</option>
+                    <option value="fr">Français</option>
+                    <option value="es">Español</option>
+                    <option value="de">Deutsch</option>
+                    <option value="jp">日本語</option>
+                </select>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-jvectormap/2.0.5/jquery-jvectormap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-jvectormap/2.0.5/jquery-jvectormap-world-mill.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/map.js"></script>
+</body>
+</html>
